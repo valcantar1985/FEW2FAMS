@@ -106,3 +106,133 @@ p {
 .button-red {background-color: var(--red-tomato);}
 .button-green {background-color: var(--green-lime);}
 .button-orange {background-color: var(--orange-spicy)}
+
+/**Header**/
+header {
+  background-color: #efefef;
+  padding: 20px;
+}
+header img {
+  max-width: 250px;
+  padding: 5px;
+}
+header a {
+  text-decoration: none;
+  color: #000
+}
+header a:hover {
+  color: #CD6E29;
+}
+header .container {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header .container > a:first-child {
+  width: 250px;
+  margin-right: auto;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.button {
+  background-color: #C52D25;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #fff;
+}
+nav li {
+  margin: 0 1em;
+  position: relative;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.navToggler,
+.navTogglerMenu {
+display: none;
+padding: 20px;
+}
+
+/**Mobile Styles**/
+@media only screen and (max-width: 767px) {
+  header .container {
+      flex-wrap: wrap;
+      position: relative;
+  }
+  header img {
+      width: 200px;
+  }
+  header nav {
+      position: absolute;
+      width: 100%;
+      top: 90px;
+      left: 0;
+      display: none;
+  }
+  header nav ul {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      background-color: #efefef;
+      padding: 0;
+      border-top: 1px solid #fff;
+  }
+  header nav li {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #fff;
+      padding: 0;
+      margin: 0;
+  }
+  header a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+  }
+  header nav li:last-child {
+      border-bottom: none;
+      padding: 0;
+  }
+  header .button {
+      width: 100%;
+      border-radius: 0;
+      display: block;
+      padding: 10px;
+  }
+  .navToggler:checked ~ nav {
+      display: block;
+  }
+  .navToggler,
+.navTogglerMenu {
+  display: block;
+}
+}
+  /* Hide the checkbox */
+.navToggler {
+  display: none;
+}
+
+/* Default: show hamburger, hide close icon */
+.navTogglerMenu .menuOpen {
+  display: inline-block;
+}
+.navTogglerMenu .menuClose {
+  display: none;
+}
+
+/* When checkbox is checked: hide hamburger, show close */
+.navToggler:checked + .navTogglerMenu .menuOpen {
+  display: none;
+}
+.navToggler:checked + .navTogglerMenu .menuClose {
+  display: inline-block;
+}
