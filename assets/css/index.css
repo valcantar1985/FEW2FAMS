@@ -1,9 +1,10 @@
+/* Carousel */
 #carousel {
 }
 
 .carousel-indicators {
     position: absolute;
-    bottom: 78px; 
+    bottom: 55px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -68,3 +69,41 @@
 .control-next {
   right: 0;
 }
+/* Carousel ends */
+
+
+
+/* Welcome Section */
+.welcome {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.welcome .button {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+/* Welcome Sections Ends */
+
+
+
+/* Featured-Items Section */
+.featured-items {
+  background-color: var(--red-tomato);
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.featured-items h2 {
+   margin-bottom: var(--spacing-xl);
+}
+
+.featured-items .button {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.featured-items .badge {
+  margin-bottom: var(--spacing-md);
+}
+/* Featured-Items Section Ends */

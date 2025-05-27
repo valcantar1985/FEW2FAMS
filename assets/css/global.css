@@ -9,31 +9,37 @@
   --black: #000;
 
   /* Font */
-  --font-family-base: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-family-base: "Roboto", sans-serif;
   --font-family-heading: "Montserrat", sans-serif;
-  --font-size-base: 20px;
 
+  --font-size-base: 20px;
+  --font-size-sm: 16px;
+
+  --font-weight-light: 100;
   --font-weight-base: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 800;
 
-  --line-height-base: 1.15; 
+  --line-height-base: 1.5; 
+  --line-height-heading: 1.4;
+
 
   /* Headings */
   --font-size-h1: 48px;
   --font-size-h2: 42px;
   --font-size-h3: 28px;
-
   --display: 36px;
+
 
   /* Spacing */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 16px;
-  --spacing-lg: 32px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
 
   /* Border radius */
-  --border-radius: 8px;
+  --corner-radius: 16px;
 
   /* Shadow */
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -55,7 +61,8 @@ body {
 h1, h2, h3 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
-  line-height: 1.5;}
+  line-height: var(--line-height-heading);
+}
 
 h1 {font-size: var(--font-size-h1);}
 h2 {font-size: var(--font-size-h2);}
@@ -63,7 +70,7 @@ h3 {font-size: var(--font-size-h3);}
 
 .display {
   font-size: var(--display);
-  font-weight: var(--font-weight-base);
+  font-weight: var(--font-weight-light);
 }
 
 a, a:visited {
@@ -89,16 +96,17 @@ img {
 
 /* buttons */
 .button {
-    padding: 10px 15px;
-    font-family: var(--font-family-heading);
-    font-size: 25px;
-    font-weight: var(--font-weight-semibold);
-    color: var(--white);
-    border: none;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: var(--font-family-heading);
+  font-size: 25px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--white);
+  border: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--corner-radius);
+  cursor: pointer;
 }
 
 .button:visited {color: var(--white);}
@@ -139,7 +147,7 @@ header ul {
   align-items: center;
   margin: 0;
 }
-.button {
+/* .button {
   background-color: #C52D25;
   border-radius: 10px;
   padding: 5px 10px;
@@ -148,7 +156,7 @@ header ul {
 }
 .button:hover {
   background-color: #fff;
-}
+} */
 nav li {
   margin: 0 1em;
   position: relative;
@@ -265,4 +273,40 @@ padding: 20px;
 
 .d-none {
   display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+
+/* Cards */
+.card img {
+  margin-bottom: var(--spacing-md);
+  border-radius: var(--spacing-sm);
+}
+
+/* Badges */
+.badge {
+  margin-top: var(--spacing-sm);
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--white-cream);
+  color: var(--black);
+  border-radius: 5px;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  text-transform: capitalize;
 }

@@ -30,8 +30,28 @@
 </head>
 <body>
 
-    <div id="carousel" class="relative w-100 overflow-hidden">
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="/assets/images/Logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <label for="navToggler" class="navTogglerMenu">
+                <i class="fa-solid fa-bars menuOpen"></i>
+                <i class="fa-solid fa-xmark menuClose"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Menu</a>
+                    </li>
+                    <li><a href="community.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="button button-red">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <div id="carousel" class="relative w-100 overflow-hidden">
         <div class="carousel-indicators d-flex">
             <button type="button" class="active"></button>
             <button type="button"></button>
@@ -42,10 +62,10 @@
                 <img src="assets/images/hero.png" alt="">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/02.jpg" alt="">
+                <img src="assets/images/pexels-sai-kuen-leung-452610443-31029751.jpg" alt="">
             </div>
             <div class="carousel-item">
-                <img src="assets/images/03.jpg" alt="">
+                <img src="assets/images/red-curry.jpg" alt="">
             </div>
         </div>
         
@@ -55,10 +75,81 @@
         <button type="button" class="control-next">
             <i class="fa-solid fa-chevron-right"></i>
         </button>
-
     </div>
 
-    
+    <section class="welcome text-center">
+        <div class="container">
+            <h1>FROM OUR KITCHEN TO YOUR TABLE</h1>
+            <p class="display">tasty quality. fresh ingredients.</p>
+            <a href="#" class="button button-green">See Menu</a>
+        </div>
+    </section>
+
+
+    <section class="featured-items text-white text-center" >
+        <div class="container">
+            <h2>Featured Items</h2>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card"> 
+                        <img src="assets/images/cards/image1.png" alt="">
+                        <div class="card-body text-center">
+                            <div class="card-title text-white">
+                                <p>Pad Thai</p>
+                            </div>
+                            <div class="card-price text-white">
+                                <p>$12.95 - $15.95</p>
+                            </div>
+                            <span class="badge">Most Ordered App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card"> 
+                        <img src="assets/images/cards/image1.png" alt="">
+                        <div class="card-body text-center">
+                            <div class="card-title text-white">
+                                <p>Pad Thai</p>
+                            </div>
+                            <div class="card-price text-white">
+                                <p>$12.95 - $15.95</p>
+                            </div>
+                            <span class="badge">Most Ordered App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card"> 
+                        <img src="assets/images/cards/image1.png" alt="">
+                        <div class="card-body text-center">
+                            <div class="card-title text-white">
+                                <p>Pad Thai</p>
+                            </div>
+                            <div class="card-price text-white">
+                                <p>$12.95 - $15.95</p>
+                            </div>
+                            <span class="badge">Most Ordered App</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card"> 
+                        <img src="assets/images/cards/image1.png" alt="">
+                        <div class="card-body text-center">
+                            <div class="card-title text-white">
+                                <p>Pad Thai</p>
+                            </div>
+                            <div class="card-price text-white">
+                                <p>$12.95 - $15.95</p>
+                            </div>
+                            <span class="badge">Most Ordered App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button button-orange">Order Now</a>
+        </div>
+    </section>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

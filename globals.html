@@ -25,32 +25,41 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
-<header>
-    <div class="container">
-        <a href="index.html"><img src="/assets/images/Logo.png" alt="logo"></a>
-        <input type="checkbox" class="navToggler" id="navToggler">
-        <label for="navToggler" class="navTogglerMenu">
-          <i class="fa-solid fa-bars menuOpen"></i>
-          <i class="fa-solid fa-xmark menuClose"></i>
-        </label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="features.html">Menu</a>
-                </li>
-                <li><a href="community.html">Contact Us</a></li>
-                <li><a href="contact.html" class="button">Order Now</a></li>
-            </ul>
-        </nav>
-      </div>
-</header>
+
 <body>
 
-    <!-- Examples so we can copy and paste our chunks from here -->
+    <!-- header -->
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="/assets/images/Logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <label for="navToggler" class="navTogglerMenu">
+                <i class="fa-solid fa-bars menuOpen"></i>
+                <i class="fa-solid fa-xmark menuClose"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Menu</a>
+                    </li>
+                    <li><a href="community.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="button button-red">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="container">
 
+    <div class="container" style="margin-inline: 15px;">
+        <style>
+            h1 {margin-top: 25px;
+            margin-bottom: 15px;}
+        </style>
+
+        <!-- Examples so we can copy and paste our chunks from here within the .container -->
+
+        <!-- buttons -->
         <h1>Buttons</h1>
 
         <!-- red button -->
@@ -61,6 +70,25 @@
 
         <!-- orange button -->
         <a href="#" class="button button-orange">Orange Button</a>
+
+
+        <!-- cards -->
+         <h1>Cards</h1>
+
+        <!-- the inline property here is not allowed in the final, be sure you remove it
+                once you paste it -->
+        <div class="card" style="width: 243.5px;"> 
+            <img src="assets/images/cards/image1.png" alt="">
+            <div class="card-body text-center">
+                <div class="card-title">
+                    <p>Pad Thai</p>
+                </div>
+                <div class="card-price">
+                    <p>$12.95 - $15.95</p>
+                </div>
+                <span class="badge">Most Ordered App</span>
+            </div>
+        </div>
 
     </div>
 
