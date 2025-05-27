@@ -101,6 +101,8 @@ p {
     cursor: pointer;
 }
 
+.button:visited {color: var(--white);}
+
 .button-red {background-color: var(--red-tomato);}
 .button-green {background-color: var(--green-lime);}
 .button-orange {background-color: var(--orange-spicy)}
