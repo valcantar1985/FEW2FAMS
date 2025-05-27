@@ -39,13 +39,7 @@
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {/* We might not use this since we are implementing bs5 grid system needed to display globals.html */
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: var(--spacing-md);
-  max-width: 1140px; 
-}
+
 
 /* Global Styles */
 body {
@@ -87,6 +81,12 @@ p {
   line-height: var(--line-height-base);
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
+
 /* buttons */
 .button {
     padding: 10px 15px;
@@ -106,3 +106,34 @@ p {
 .button-red {background-color: var(--red-tomato);}
 .button-green {background-color: var(--green-lime);}
 .button-orange {background-color: var(--orange-spicy)}
+
+
+/* Utilities */
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
