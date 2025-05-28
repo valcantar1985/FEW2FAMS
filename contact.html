@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Reset styles-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Global styles -->
+    <link rel="stylesheet" href="assets/css/global.css">
+
+    <!-- Bootstrap Grid -->
+     <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html"><img src="/assets/images/Logo.png" alt="logo"></a>
+            <input type="checkbox" class="navToggler" id="navToggler">
+            <label for="navToggler" class="navTogglerMenu">
+                <i class="fa-solid fa-bars menuOpen"></i>
+                <i class="fa-solid fa-xmark menuClose"></i>
+            </label>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Menu</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="button button-red">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="page-header">
+            <h1>
+                Contact Us
+            </h1>
+            <p>We'd love to hear from you!</p>
+        </div>
+        <div class="form-area">
+            <div class="form-container">
+                <form action="#" method="post">
+
+                    <em class="span-full">Note: Fields highlighted in red are required.</em> 
+        
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" required size="30" autofocus placeholder="First Name" id="first-name">
+                        
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" required size="30" placeholder="Last Name" id="last-name">
+                    </div>
+
+                    <div class="form-group span-full">
+                        <label for="email">Email Address:</label>
+                        <input type="email" name="email" required ="30" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="example@domain.com" id="email">
+                    </div>
+
+
+                    <div class="form-group span-full">
+                        <label for="topic">Topic</label>
+                        <select name="topic">
+                                <option value="None" selected>Select a Topic</option>
+                                <option value="General Info">General Info</option>
+                                <option value="Menu">Menu</option>
+                                <option value="Ordering">Ordering</option>
+                                <option value="Catering">Catering</option>
+                                <option value="Feedback">Provide Feedback</option>
+
+                        </select>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="topic">Interested in signing up for our newsletter?</label>
+                        <div><input type="radio" name="newsletter" id="opt-in" value="opt-in">Sign up for Newsletter</div>
+                        <div><input type="radio" name="newsletter" id="opt-out" value="opt-out">Opt Out of Newsletter</div>
+                    </div>
+
+
+                    <div class="form-group span-full">
+                        <label for="comments">Message</label>
+                        <textarea name="comments" id="comments" wrap="soft"
+                         placeholder="Share your thoughts with us!"></textarea>
+                    </div>
+    
+        
+                    <div class="form-group">
+                        <div><input type="checkbox" name="signup" id="signup-yes" value="signup-yes">Please sign me up for promo emails & discounts</div>
+                    </div>
+           
+        
+                    <input class="button" type="submit" value="Submit">
+        
+        
+        
+        
+                </form>
+            </div>
+                <div class="contact-info-box">
+                       <div class="footer-block">
+                           <h3>Location</h3>
+                           <p>757 Seacoast Drive <br>
+                               Imperial Beach, CA 91932
+                           </p>
+                       </div>
+                       <div class="footer-block">
+                           <h3>Hours</h3>
+                           <p>Monday-Sunday <br>
+                               11:00am-10:30pm
+                           </p>
+                       </div>
+                       <div class="footer-block">
+                           <h3>Contact</h3>
+                           <p>
+                               (619) 941-1656 <br>
+                               contactus@aromathai.com
+                           </p>
+                       </div> 
+                       <div class="footer-block">
+                           <h3>Follow Us</h3>
+                           <div>
+                               <a href="https://instagram.com"><img class='socials' src="assets/images/instagram-brands.svg"></a>
+                               <a href="https://facebook.com"><img class='socials' src="assets/images/facebook-f-brands-solid.svg"></a>
+                               <a href="https://twitter.com"><img class='socials' src="assets/images/twitter-brands.svg"></a>
+                           </div>
+                        </div>   
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="catering">
+        <h2>
+            Interested in Catering?
+        </h2>
+        <p>See our package options for all your catering needs!</p>
+        <a href="#" class="button">LEARN MORE</a>
+
+    </section>
+
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.8836120333576!2d-117.1341197891041!3d32.582627893785954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d94cf6da76f0a9%3A0xdb3ec27e1e9b7b34!2sAroma%20Thai%20Restaurant!5e0!3m2!1sen!2sus!4v1748394148726!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+   
+
+
+ 
+    <section class="footer">
+        <div class="footer-info-box">
+             <div class="container">
+                <div class="footer-block">
+                    <h3>Location</h3>
+                    <p>757 Seacoast Drive <br>
+                        Imperial Beach, CA 91932
+                    </p>
+                </div>
+                <div class="footer-block">
+                    <h3>Hours</h3>
+                    <p>Monday-Sunday <br>
+                        11:00am-10:30pm
+                    </p>
+                </div>
+                <div class="footer-block">
+                    <h3>Contact</h3>
+                    <p>
+                        (619) 941-1656 <br>
+                        contactus@aromathai.com
+                    </p>
+                </div> 
+                <div class="footer-block">
+                    <h3>Follow Us</h3>
+                    <div>
+                        <a href="https://instagram.com"><img class='socials' src="assets/images/instagram-brands.svg"></a>
+                        <a href="https://facebook.com"><img class='socials' src="assets/images/facebook-f-brands-solid.svg"></a>
+                        <a href="https://twitter.com"><img class='socials' src="assets/images/twitter-brands.svg"></a>
+                    </div>
+                 </div>   
+            </div>
+        </div>
+        <div class="footer-copyright text-center">
+            <p>&copy; Copyright Aroma Thai. All Rights Reserved</p>
+        </div>
+
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
