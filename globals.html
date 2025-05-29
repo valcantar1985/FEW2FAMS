@@ -39,7 +39,7 @@
             </label>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="menu.html">Menu</a>
                     </li>
@@ -75,7 +75,9 @@
         <!-- cards -->
          <h1>Cards</h1>
 
-        <!-- the inline property here is not allowed in the final, be sure you remove it
+        <div class="d-flex">
+
+            <!-- the inline property here is not allowed in the final, be sure you remove it
                 once you paste it -->
         <div class="card" style="width: 243.5px;"> 
             <img src="assets/images/cards/image1.png" alt="">
@@ -88,6 +90,28 @@
                 </div>
                 <span class="badge">Most Ordered App</span>
             </div>
+        </div>
+
+        <!-- Reviews card -->
+        <div class="reviews-card text-start" style="width:325px; height: 225px; margin-inline: 20px;"><!-- Remove inline-style here -->
+            <div class="rate"> 
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="review">
+                <p>Best Thai Food Ever!!</p>
+                <p>I love eating here so much! Def a weekly takeout order!</p>
+            </div>
+            <div class="customer d-flex">
+                <img src="assets/images/icons/fish.png" alt="">
+                <p class="fw-semibold">Jay Courts</p>
+            </div>
+            <a href="#" class="d-block text-end fw-semibold fs-">Read More</a>
+        </div>
+
         </div>
 
     </div>

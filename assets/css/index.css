@@ -1,7 +1,4 @@
 /* Carousel */
-#carousel {
-}
-
 .carousel-indicators {
     position: absolute;
     bottom: 55px; 
@@ -73,7 +70,7 @@
 
 
 
-/* Welcome Section */
+/* Sections */
 .welcome {
   margin-top: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
@@ -83,27 +80,86 @@
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
 }
-/* Welcome Sections Ends */
 
-
-
-/* Featured-Items Section */
-.featured-items {
-  background-color: var(--red-tomato);
+.featured-items,
+.reviews,
+.feedback{
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
 }
 
-.featured-items h2 {
+.featured-items h2,
+.reviews h2 {
    margin-bottom: var(--spacing-xl);
 }
 
-.featured-items .button {
+.featured-items .button,
+.reviews .button,
+.cta .button {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
+}
+
+.feedback h2,
+.cta h2 {
+   margin-bottom: var(--spacing-sm);
+}
+
+.featured-items {
+  background-color: var(--red-tomato);
+}
+
+.feedback {
+  background-color: var(--orange-spicy);
+}
+
+.feedback .container-md {
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback form {
+  padding-bottom: var(--spacing-xl);
+}
+
+.feedback input {
+  width: 430px;
+  height: 40px;
+  border: 0;
+  padding-inline: var(--spacing-md);
+  border-radius: var(--corner-radius);
+  font-size: var(--font-size-base);
+  flex: 1;
+}
+
+.feedback input:focus {
+  border: 0;
+  outline: none;
+}
+
+.feedback input::placeholder {
+  font-style: italic;
+  opacity: 0.8; 
+  font-size: var(--font-size-sm);
 }
 
 .featured-items .badge {
   margin-bottom: var(--spacing-md);
 }
-/* Featured-Items Section Ends */
+
+.cta {
+  background-image: url(../images/home/city.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  width: 100%;
+  padding-top: 100px;
+}
+/* Section Ends */
+
+
+
+/* Footer */
+#home-footer .footer-info-box {
+  margin-top: 0;
+}
