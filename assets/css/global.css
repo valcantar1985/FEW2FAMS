@@ -173,6 +173,58 @@ display: none;
 padding: 20px;
 }
 
+
+/** Footer **/
+.footer-info-box {
+  background-color: var(--green-lime);
+  margin-top: var(--spacing-sm);
+
+}
+
+.footer-info-box .container {
+  /* padding: 20px; */
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: row;
+  /* color: var(--white-cream); */
+}
+
+.footer-block {
+  width: 33%;
+  padding: var(--spacing-sm);
+}
+
+.footer-block h3 {
+  font-weight: var(--font-weight-semibold);
+}
+.footer-block p {
+  font-family: var(--font-family-heading);
+}
+
+.footer-block p:nth-child(3) {
+  background-color: blue;
+}
+
+.socials {
+  width: 30px;
+  height: 30px;
+  display: inline;
+}
+
+.footer-copyright {
+  padding: var(--spacing-md);
+  font-family: var(--font-family-heading);
+  background-color: var(--white-cream);
+
+
+
+}
+
+.footer-copyright p {
+  font-family: var(--font-family-heading);
+}
+
+
 /**Mobile Styles**/
 @media only screen and (max-width: 767px) {
   header .container {
@@ -227,6 +279,20 @@ padding: 20px;
 .navTogglerMenu {
   display: block;
 }
+
+  /** Footer Mobile */
+  .footer-info-box .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-block {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+
+
 }
   /* Hide the checkbox */
 .navToggler {
