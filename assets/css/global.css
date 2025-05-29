@@ -130,11 +130,13 @@ header img {
   max-width: 250px;
   padding: 5px;
 }
-header a {
+header a,
+header a:visited {
   text-decoration: none;
-  color: #000
+  color: var(--black);
 }
-header a:hover {
+header a:hover,
+header a.active {
   color: #CD6E29;
 }
 header .container {
