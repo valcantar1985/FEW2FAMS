@@ -1,0 +1,24 @@
+.aboutus-video {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover; /* fills the area, cropping if needed */
+    display: block;
+    margin: 0;
+    padding-top: 30px;
+}
+.ourstory {
+    background-color: var(--brown-utils);
+    color: white;
+    padding: 120px;
+}
+.ourstory-hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ourstory-hero img {
+    max-width: 50%;
+}
+.ourstory-text {
+    padding: 15px;
+}

@@ -116,9 +116,14 @@ img {
 .button-orange {background-color: var(--orange-spicy)}
 
 /**Header**/
+header .button {
+  font-size: 16px;
+}
 header {
+  font-family: var(--font-family-heading);
   background-color: #efefef;
   padding: 20px;
+  color: black;
 }
 header img {
   max-width: 250px;
@@ -129,7 +134,10 @@ header a {
   color: #000
 }
 header a:hover {
-  color: #CD6E29;
+  color: var(--orange-spicy);
+}
+header a:visited {
+  color: var(--red-tomato);
 }
 header .container {
   padding: 10px;
@@ -147,16 +155,6 @@ header ul {
   align-items: center;
   margin: 0;
 }
-/* .button {
-  background-color: #C52D25;
-  border-radius: 10px;
-  padding: 5px 10px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.button:hover {
-  background-color: #fff;
-} */
 nav li {
   margin: 0 1em;
   position: relative;
@@ -168,59 +166,6 @@ nav li {
 display: none;
 padding: 20px;
 }
-
-/** Footer **/
-.footer-info-box {
-  background-color: var(--green-lime);
-  margin-top: var(--spacing-sm);
-
-}
-
-.footer-info-box .container {
-  /* padding: 20px; */
-  padding: var(--spacing-md);
-  display: flex;
-  flex-direction: row;
-  /* color: var(--white-cream); */
-}
-
-.footer-block {
-  width: 33%;
-  padding: var(--spacing-sm);
-}
-
-.footer-block h3 {
-  font-weight: var(--font-weight-semibold);
-}
-.footer-block p {
-  font-family: var(--font-family-heading);
-}
-
-.footer-block p:nth-child(3) {
-  background-color: blue;
-}
-
-.socials {
-  width: 30px;
-  height: 30px;
-  display: inline;
-}
-
-.footer-copyright {
-  padding: var(--spacing-md);
-  font-family: var(--font-family-heading);
-  background-color: var(--white-cream);
-
-
-
-}
-
-.footer-copyright p {
-  font-family: var(--font-family-heading);
-}
-/* 
---font-family-base: "Roboto", sans-serif;
---font-family-heading: "Montserrat", sans-serif; */
 
 /**Mobile Styles**/
 @media only screen and (max-width: 767px) {
@@ -276,19 +221,6 @@ padding: 20px;
 .navTogglerMenu {
   display: block;
 }
-
-
-  /** Footer Mobile */
-  .footer-info-box .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-block {
-    width: 100%;
-    margin: var(--spacing-sm) 0;
-  }
-
 }
   /* Hide the checkbox */
 .navToggler {
