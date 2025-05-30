@@ -43,7 +43,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="menu.html">Menu</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                     <li><a href="contact.html" class="button button-red">Order Now</a></li>
                 </ul>
             </nav>
@@ -55,99 +55,78 @@
             <h1>
                 Contact Us
             </h1>
-            <p>We'd love to hear from you!</p>
+            <p class="display">We'd love to hear from you!</p>
         </div>
         <div class="form-area">
-            <div class="form-container">
-                <form action="#" method="post">
+                <div class="form-container">
+                    <form action="#" method="post">
 
-                    <em class="span-full">Note: Fields highlighted in red are required.</em> 
-        
-                    <div class="form-group">
-                        <label for="first-name">First Name:</label>
-                        <input type="text" name="first-name" required size="30" autofocus placeholder="First Name" id="first-name">
-                        
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" name="last-name" required size="30" placeholder="Last Name" id="last-name">
-                    </div>
+                        <em class="span-full">Note: Fields highlighted in red are required.</em> 
+                        <br>
+                        <br>
+            
+                        <div class="form-group">
+                            <label for="first-name">First Name:</label>
+                            <input type="text" name="first-name" required size="30" autofocus placeholder="First Name" id="first-name">
+                            
+                        </div>
+            
+                        <div class="form-group">
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" name="last-name" required size="30" placeholder="Last Name" id="last-name">
+                        </div>
 
-                    <div class="form-group span-full">
-                        <label for="email">Email Address:</label>
-                        <input type="email" name="email" required ="30" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="example@domain.com" id="email">
-                    </div>
+                        <div class="form-group">
+                            <label for="tel">Phone Number:</label>
+                            <input type="tel" name="tel" required ="10" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="(555) 555-5555" id="tel">
+                        </div>
 
-
-                    <div class="form-group span-full">
-                        <label for="topic">Topic</label>
-                        <select name="topic">
-                                <option value="None" selected>Select a Topic</option>
-                                <option value="General Info">General Info</option>
-                                <option value="Menu">Menu</option>
-                                <option value="Ordering">Ordering</option>
-                                <option value="Catering">Catering</option>
-                                <option value="Feedback">Provide Feedback</option>
-
-                        </select>
-                    </div>
-        
-                    <div class="form-group">
-                        <label for="topic">Interested in signing up for our newsletter?</label>
-                        <div><input type="radio" name="newsletter" id="opt-in" value="opt-in">Sign up for Newsletter</div>
-                        <div><input type="radio" name="newsletter" id="opt-out" value="opt-out">Opt Out of Newsletter</div>
-                    </div>
+                        <div class="form-group span-full">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" required ="30" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="example@domain.com" id="email">
+                        </div>
 
 
-                    <div class="form-group span-full">
-                        <label for="comments">Message</label>
-                        <textarea name="comments" id="comments" wrap="soft"
-                         placeholder="Share your thoughts with us!"></textarea>
-                    </div>
-    
-        
-                    <div class="form-group">
-                        <div><input type="checkbox" name="signup" id="signup-yes" value="signup-yes">Please sign me up for promo emails & discounts</div>
-                    </div>
-           
-        
-                    <input class="button" type="submit" value="Submit">
-        
-        
-        
-        
-                </form>
-            </div>
-                <div class="contact-info-box">
-                       <div class="footer-block">
-                           <h3>Location</h3>
-                           <p>757 Seacoast Drive <br>
-                               Imperial Beach, CA 91932
-                           </p>
-                       </div>
-                       <div class="footer-block">
-                           <h3>Hours</h3>
-                           <p>Monday-Sunday <br>
-                               11:00am-10:30pm
-                           </p>
-                       </div>
-                       <div class="footer-block">
-                           <h3>Contact</h3>
-                           <p>
-                               (619) 941-1656 <br>
-                               contactus@aromathai.com
-                           </p>
-                       </div> 
-                       <div class="footer-block">
-                           <h3>Follow Us</h3>
-                           <div>
-                               <a href="https://instagram.com"><img class='socials' src="assets/images/instagram-brands.svg"></a>
-                               <a href="https://facebook.com"><img class='socials' src="assets/images/facebook-f-brands-solid.svg"></a>
-                               <a href="https://twitter.com"><img class='socials' src="assets/images/twitter-brands.svg"></a>
-                           </div>
-                        </div>   
+                        <div class="form-group span-full">
+                            <label for="topic">How did you hear about us?</label>
+                            <select  size="5" multiple>
+                                <option value='blue'>Friends/Family</option>
+                                <option value='green'>Yelp</option>
+                                <option value='red'>Instagram</option>
+                                <option value='yellow'>Facebook</option>
+                                <option value='orange'>Google Maps</option>
+                            </select>
+                        </div>
 
+            
+            
+                        <div class="form-group">
+                            <label for="topic">Are you okay with us giving you a call back?</label>
+                            <div><input type="radio" name="newsletter" id="opt-in" value="opt-in">Yes</div>
+                            <div><input type="radio" name="newsletter" id="opt-out" value="opt-out">No</div>
+                        </div>
+
+
+                        <div class="form-group span-full">
+                            <label for="comments">Message</label>
+                            <textarea name="comments" id="comments" wrap="soft"
+                            placeholder="Share your thoughts with us!"></textarea>
+                        </div>
+        
+            
+                        <div class="form-group">
+                            <div><input type="checkbox" name="signup" id="signup-yes" value="signup-yes">Sign me up for promotional emails & discounts</div>
+                        </div>
+            
+            
+                        <input class="button" type="submit" value="Submit">
+            
+            
+            
+            
+                    </form>
+                </div>
+               
             </div>
         </div>
 
@@ -168,43 +147,41 @@
 
    
 
-
- 
     <section class="footer">
         <div class="footer-info-box">
-             <div class="container">
-                <div class="footer-block">
-                    <h3>Location</h3>
-                    <p>757 Seacoast Drive <br>
-                        Imperial Beach, CA 91932
-                    </p>
-                </div>
-                <div class="footer-block">
-                    <h3>Hours</h3>
-                    <p>Monday-Sunday <br>
-                        11:00am-10:30pm
-                    </p>
-                </div>
-                <div class="footer-block">
-                    <h3>Contact</h3>
-                    <p>
-                        (619) 941-1656 <br>
-                        contactus@aromathai.com
-                    </p>
-                </div> 
-                <div class="footer-block">
-                    <h3>Follow Us</h3>
-                    <div>
-                        <a href="https://instagram.com"><img class='socials' src="assets/images/instagram-brands.svg"></a>
-                        <a href="https://facebook.com"><img class='socials' src="assets/images/facebook-f-brands-solid.svg"></a>
-                        <a href="https://twitter.com"><img class='socials' src="assets/images/twitter-brands.svg"></a>
-                    </div>
-                 </div>   
-            </div>
-        </div>
-        <div class="footer-copyright text-center">
-            <p>&copy; Copyright Aroma Thai. All Rights Reserved</p>
-        </div>
+            <div class="container">
+               <div class="footer-block">
+                   <h3>Location</h3>
+                   <p>757 Seacoast Drive <br>
+                       Imperial Beach, CA 91932
+                   </p>
+               </div>
+               <div class="footer-block">
+                   <h3>Hours</h3>
+                   <p>Monday-Sunday <br>
+                       11:00am-10:30pm
+                   </p>
+               </div>
+               <div class="footer-block">
+                   <h3>Contact</h3>
+                   <p>
+                       (619) 941-1656 <br>
+                       <a class='email-link' href="contactus@aromathai.com">contactus@aromathai.com</a>
+                   </p>
+               </div> 
+               <div class="footer-block">
+                   <h3>Follow Us</h3>
+                   <div>
+                       <a href="https://instagram.com"><img class='socials' src="assets/images/instagram-brands.svg"></a>
+                       <a href="https://facebook.com"><img class='socials' src="assets/images/facebook-f-brands-solid.svg"></a>
+                       <a href="https://twitter.com"><img class='socials' src="assets/images/twitter-brands.svg"></a>
+                   </div>
+                </div>   
+           </div>
+       </div>
+       <div class="footer-copyright text-center">
+           <p>&copy; Copyright Aroma Thai. All Rights Reserved</p>
+       </div>
 
     </section>
 
