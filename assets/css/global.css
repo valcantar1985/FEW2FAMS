@@ -424,6 +424,10 @@ padding: 20px;
    
 }
 
+.card-body {
+  padding: 0 var(--spacing-sm)
+}
+
 .fa-circle-plus {
   padding: var(--spacing-md);
 }
