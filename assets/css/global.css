@@ -419,7 +419,8 @@ padding: 20px;
 .card img {
   margin-bottom: var(--spacing-md);
   border-radius: var(--spacing-sm);
-
+  height: 175px;
+  object-fit: cover;
    
 }
 

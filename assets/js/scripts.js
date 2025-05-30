@@ -66,4 +66,20 @@ $(document).ready(function () {
     });
     // carousel ends
     
+
+    // back to top
+    const btn = $('.toTop');
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 700) {
+        btn.fadeIn();
+        } else {
+        btn.fadeOut();
+        }
+    });
+
+    btn.click(function (e) {
+        e.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, '700');
+    });
 });
