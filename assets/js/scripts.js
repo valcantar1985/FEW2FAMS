@@ -65,23 +65,5 @@ $(document).ready(function () {
         startAutoSlide();
     });
     // carousel ends
-
-
-    // menu tabs
-    $('.tab-link').on('click', function(e) {
-        e.preventDefault();
-
-        // Remove 'active' class from all tabs and tab content
-        $('.tab-link').removeClass('active');
-        $('.tab-content').removeClass('active');
-
-        // Add 'active' class to clicked tab
-        $(this).addClass('active');
-
-        // Get the data-tb attribute to match the corresponding tab-content ID
-        const tabId = $(this).data('tb');
-        $('#' + tabId).addClass('active');
-    });
-    // menu tabs ends
     
 });
