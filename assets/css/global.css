@@ -409,9 +409,27 @@ padding: 20px;
 
 
 /* Cards */
+.card {
+  /* background-color: blue; */
+  border: 1px solid var(--orange-spicy);
+  border-radius: 10px;
+  margin: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+}
+
 .card img {
   margin-bottom: var(--spacing-md);
   border-radius: var(--spacing-sm);
+
+   
+}
+
+.fa-circle-plus {
+  padding: var(--spacing-md);
+}
+
+.card-title > p {
+  font-weight: var(--font-weight-bold);
 }
 
 /* Within reviews-card multiple selctors in used */
