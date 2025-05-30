@@ -421,7 +421,10 @@ padding: 20px;
   border-radius: var(--spacing-sm);
   height: 175px;
   object-fit: cover;
-   
+}
+
+.card-body {
+  padding: 0 var(--spacing-sm)
 }
 
 .fa-circle-plus {
