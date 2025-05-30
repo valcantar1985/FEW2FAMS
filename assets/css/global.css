@@ -409,8 +409,7 @@ padding: 20px;
 
 
 /* Cards */
-.card {
-  /* background-color: blue; */
+.card.menu {
   border: 1px solid var(--orange-spicy);
   border-radius: 10px;
   margin: var(--spacing-md);
@@ -428,7 +427,7 @@ padding: 20px;
   padding: var(--spacing-md);
 }
 
-.card-title > p {
+.menu .card-title > p {
   font-weight: var(--font-weight-bold);
 }
 
