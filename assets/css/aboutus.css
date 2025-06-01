@@ -8,7 +8,7 @@
     object-fit: cover; /* fills the area, cropping if needed */
     display: block;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 .ourstory {
     background-color: var(--brown-utils);
@@ -34,7 +34,7 @@
     padding: var(--spacing-lg);
 }
 .meet-the-team {
-    margin: 0px auto 50px 0;
+    margin: 0px auto 50px auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

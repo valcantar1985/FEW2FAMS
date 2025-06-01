@@ -34,7 +34,7 @@
   --font-size-h1: 48px;
   --font-size-h2: 42px;
   --font-size-h3: 28px;
-  --font-size-h4: 24px;
+  --font-size-h4: 20px;
   --display: 36px;
 
 
@@ -75,6 +75,7 @@ h1, h2, h3, h4 {
 h1 {font-size: var(--font-size-h1);}
 h2 {font-size: var(--font-size-h2);}
 h3 {font-size: var(--font-size-h3);}
+h4 {font-size: var(--font-size-h4)}
 
 .display {
   font-size: var(--display);
