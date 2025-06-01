@@ -5,6 +5,8 @@
   --orange-spicy: #CD6E29;
   --brown-utils: #54351F;
   --white-cream: #EAE7DC;
+  --orange-spicy-light: #CD6E29bf;
+  --green-lime-light: #959235bf;
 
   --red-stroke: #9A211B;
 
@@ -20,9 +22,9 @@
   --font-size-sm: 16px;
 
   --font-weight-light: 100;
-  --font-weight-base: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 800;
+  --font-weight-base: 300;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 600;
 
   --line-height-base: 1.5; 
   --line-height-heading: 1.4;
@@ -32,6 +34,7 @@
   --font-size-h1: 48px;
   --font-size-h2: 42px;
   --font-size-h3: 28px;
+  --font-size-h4: 24px;
   --display: 36px;
 
 
@@ -62,10 +65,11 @@ body {
     "wdth" 100;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
+  text-align: center;
 }
 
 h1 {font-size: var(--font-size-h1);}
@@ -139,14 +143,14 @@ header img {
 }
 header a,
 header a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
   color: var(--black);
 }
 header a:hover {
   color: var(--orange-spicy);
 }
 header a:visited {
-  color: var(--red-tomato);
+  color: var(--green-lime);
 }
 header .container {
   padding: 10px;
@@ -179,7 +183,7 @@ padding: 20px;
 
 /** Footer **/
 .footer-info-box {
-  background-color: var(--green-lime);
+  background-color: var(--green-lime-light);
   margin-top: var(--spacing-sm);
 
 }
