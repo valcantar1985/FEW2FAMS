@@ -6,15 +6,43 @@
 }
 .form-area {
     padding: var(--spacing-md);
-    background-color: var(--green-lime);
+    /* background-color: var(--green-lime); */
+
+    /* Create the parallax scrolling effect */
+
+    position: relative;
+    background: url(/assets/images/cityscape-night-bangkok-thailand.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
+.form-area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(var(--green-lime), var(--green-lime));
+    opacity: 0.93;
+    z-index: 0;
+}
+
+.form-container {
+    opacity: 1;
+    position: relative;
+    z-index: 1;
+}
 .form-group {
     display: flex;
     flex-direction: column;
     margin-bottom: var(--spacing-lg);
     width: 500px;
     /* background-color: blue; */
+
     
 }
 
@@ -86,7 +114,7 @@ textarea {
 }
 
 .contact-info-box {
-    /* background-color: red; */
+    /* background-color: red;  */
     display: flex;
     flex-direction: column;
     justify-content: center;

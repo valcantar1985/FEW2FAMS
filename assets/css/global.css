@@ -202,12 +202,17 @@ padding: 20px;
   padding: var(--spacing-sm);
 }
 
-.footer-block h3 {
+.footer-block h4 {
   font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-h4);
+  text-align: left;
 }
-.footer-block p {
+.footer-block p , .footer-block a {
   font-family: var(--font-family-heading);
+  font-size: var(--font-size-xs);
 }
+
+
 
 .footer-block p:nth-child(3) {
   background-color: blue;
