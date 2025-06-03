@@ -70,29 +70,6 @@ h3 {
   color: var(--red-tomato);
 }
 
-.row .col {}
-
-a.toTop {
-  position: fixed;
-  bottom: var(--spacing-md);
-  right: var(--spacing-sm);
-  background-color: var(--red-tomato);
-  border: 1px solid var(--red-stroke);
-  padding: var(--spacing-sm) var(--spacing-md);
-  color: var(--white);
-  border-radius: 10px;
-  text-decoration: none;
-  transition: ease-in-out .3sec;
-}
-
-a.toTop {
-  opacity: .8;
-}
-
-a.toTop:hover {
-  opacity: 1;
-}
-
 .card {
   min-height: 340px;
 }

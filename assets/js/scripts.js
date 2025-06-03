@@ -69,6 +69,8 @@ $(document).ready(function () {
 
     // back to top
     const btn = $('.toTop');
+    btn.hide(); // Hide initially
+
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > 700) {
@@ -82,4 +84,5 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '700');
     });
+
 });
