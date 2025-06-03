@@ -84,5 +84,6 @@ $(document).ready(function () {
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, '700');
     });
+     // back to top ends
 
 });

@@ -1,3 +1,5 @@
+
+
 :root {
   /* Colors */
   --green-lime: #959235;
@@ -298,9 +300,15 @@ padding: 20px;
       display: block;
   }
   .navToggler,
-.navTogglerMenu {
-  display: block;
-}
+  .navTogglerMenu {
+    font-size: 32px;
+    display: block;
+    z-index: 9999;
+  }
+
+  /* .carousel {
+  position: relative;;
+  } */
 
   /** Footer Mobile */
   .footer-info-box .container {
@@ -527,4 +535,24 @@ a.toTop {
 
 a.toTop:hover {
   opacity: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-lg: 20px;
+    --font-size-base: 16px;
+    --font-size-sm: 14px;
+
+    --font-size-h1: 36px;
+    --font-size-h2: 30px;
+    --font-size-h3: 22px;
+    --font-size-h4: 16px;
+    --display: 28px;
+  }
+
+  .button {
+      font-size: 20px;
+    }
 }

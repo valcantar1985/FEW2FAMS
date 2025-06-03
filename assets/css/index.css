@@ -129,7 +129,6 @@
   padding-inline: var(--spacing-md);
   border-radius: var(--corner-radius);
   font-size: var(--font-size-base);
-  flex: 1;
 }
 
 .feedback input:focus {
@@ -145,6 +144,10 @@
 
 .featured-items .badge {
   margin-bottom: var(--spacing-md);
+}
+
+.featured-items .card-title {
+  font-weight: var(--font-weight-semibold);
 }
 
 .cta {
@@ -163,3 +166,83 @@
 #home-footer .footer-info-box {
   margin-top: 0;
 }
+
+
+@media (max-width: 768px) {
+
+  header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #carousel {
+    position: static;
+    margin-top: 140px;
+  }
+
+  .carousel-inner .carousel-item {
+    height: auto;
+    max-height: auto;
+    overflow: hidden;
+    padding-bottom: 90px;
+  }
+
+  .carousel-item img {
+    min-height: 323px;
+    height: 323px;
+    width: 100%;
+    object-fit: cover;  
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 503px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 24px;
+    z-index: 10;
+  }
+
+  .control-prev,
+  .control-next {
+    position: absolute;
+    top: 301.5px;
+    color: rgba(255,255,255, 0.3);
+    font-size: 40px;
+  }
+  
+  .featured-items .container .card {
+    padding-inline: 90px;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .featured-items .card img {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .reviews .row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg)
+  }
+
+  .feedback input {
+  width: auto;
+  height: 40px;
+  border: 0;
+  padding-inline: var(--spacing-md);
+  border-radius: var(--corner-radius);
+  font-size: var(--font-size-base);
+  flex: 0;
+}
+
+.feedback .button {
+  display: block;
+  margin: var(--spacing-lg) auto 0;
+  width: 164px;
+}
+}
+
