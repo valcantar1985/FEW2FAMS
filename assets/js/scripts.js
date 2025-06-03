@@ -86,4 +86,17 @@ $(document).ready(function () {
     });
      // back to top ends
 
+
+    $(function () {
+        $('.rate i').each(function (index) {
+            const $icon = $(this);
+            setTimeout(function () {
+            $icon.addClass('visible');
+            setTimeout(function () {
+                $icon.addClass('settled');
+            }, 300);
+            }, index * 120);
+        });
+    });
+
 });

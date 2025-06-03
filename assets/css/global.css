@@ -51,7 +51,10 @@
   --corner-radius: 16px;
 
   /* Shadow */
-  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.2);
+    --shadow-inset: inset 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 *, *::before, *::after {
@@ -113,6 +116,26 @@ img {
   width: 100%;
 }
 
+/* Image shadow classes */
+.shadow-soft {
+  box-shadow: var(--shadow-soft);
+}
+
+.shadow-medium {
+  box-shadow: var(--shadow-medium);
+}
+
+.shadow-hover {
+  transition: box-shadow 0.3s ease;
+}
+.shadow-hover:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.shadow-inset {
+  box-shadow: var(--shadow-inset);
+}
+
 
 /* buttons */
 .button {
@@ -127,6 +150,7 @@ img {
   text-decoration: none;
   border-radius: var(--corner-radius);
   cursor: pointer;
+   box-shadow: var(--shadow-inset);
 }
 
 .button:visited {color: var(--white);}
@@ -556,3 +580,89 @@ a.toTop:hover {
       font-size: 20px;
     }
 }
+
+
+/* Animations */
+
+
+/* Zoom Loop */
+@keyframes pulseZoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+.zoom-loop {
+  animation: pulseZoom 3s ease-in-out infinite;
+}
+
+/* Gentle Float (Up & Down) */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.float-up {
+  animation: floatY 4s ease-in-out infinite;
+}
+
+/* Sway Side to Side */
+@keyframes sway {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(8px); }
+}
+.sway {
+  animation: sway 3s ease-in-out infinite;
+}
+
+/* Slow Spin */
+@keyframes slowSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.spin-slow {
+  animation: slowSpin 10s linear infinite;
+}
+
+/* Bounce In Place */
+@keyframes bounceSubtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.bounce-subtle {
+  animation: bounceSubtle 1.8s ease-in-out infinite;
+}
+
+/* Tilt Slightly */
+@keyframes tilt {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}
+.tilt {
+  animation: tilt 2s ease-in-out infinite;
+}
+
+/* Blink (for cursors, indicators) */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Wiggle (Playful shake) */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(.5deg); }
+  75% { transform: rotate(-.5deg); }
+}
+.wiggle {
+  animation: wiggle 0.6s ease-in-out infinite;
+}
+/* Zoom on Hover */
+.zoom-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-hover:hover {
+  transform: scale(1.03);
+}
+
