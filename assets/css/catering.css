@@ -1,0 +1,67 @@
+.menu-header {
+    padding: var(--spacing-lg);
+}
+/* Meet our Team styling*/
+.the-services h2 {
+    padding: var(--spacing-lg);
+}
+.service-explore {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+  .service-card {
+    width: 300px;
+    text-align: center;
+    padding: var(--spacing-sm);
+    position: relative;
+  }
+  
+  .service-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -60px; 
+  }
+  
+  .service-image img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+  }
+  
+  .servicename {
+    height: 275px;
+    padding: 100px 20px 40px; /* Top padding allows space for image overlap */
+    background-color: #fff;
+    border: 1px solid var(--orange-spicy);
+    border-radius: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+  }
+.employeename p {
+    font-size: 18px;
+    font-style: italic;
+}
+.estimate {
+    text-align: center;
+    margin: var(--spacing-lg)
+  }
+
+@media (max-width: 768px) {
+    .meet-the-team {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

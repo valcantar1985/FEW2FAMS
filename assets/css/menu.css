@@ -96,3 +96,74 @@ a.toTop:hover {
 .card {
   min-height: 340px;
 }
+
+.card.menu {
+  transition: transform 1s ease;
+
+}
+
+.card.menu:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border-width: 3px;
+}
+
+.card.menu img {
+   transition: transform 1s ease;
+   transform-origin: center;
+}  
+
+.card.menu:hover img {
+  padding-top: var(--spacing-xs);
+  transform: scale(0.90); /* shrink image slightly */
+}
+
+.card.menu a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #efefef;
+  margin: 15% auto;
+  width: 60%;
+  max-width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.modal-content img {
+  object-fit: cover;
+}
+
+.modal-content h4 {
+  padding-top: var(--spacing-sm);
+}
+
+.close-btn {
+  color: #000;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.modal:target {
+  display: block 
+} 

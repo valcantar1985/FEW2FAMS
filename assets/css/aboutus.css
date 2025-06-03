@@ -1,15 +1,22 @@
+.menu-header {
+    padding: var(--spacing-lg);
+}
+
 .aboutus-video {
     width: 100vw;
     height: 350px;
     object-fit: cover; /* fills the area, cropping if needed */
     display: block;
     margin: 0;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 .ourstory {
     background-color: var(--brown-utils);
     color: white;
     padding: 120px;
+}
+.ourstory h2 {
+    text-align: left;
 }
 .ourstory-hero {
     display: flex;
@@ -22,3 +29,42 @@
 .ourstory-text {
     padding: 15px;
 }
+/* Meet our Team styling*/
+.the-team h2 {
+    padding: var(--spacing-lg);
+}
+.meet-the-team {
+    margin: 0px auto 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+.team-member-card {
+    width: auto;
+    text-align: center;
+    padding: var(--spacing-sm);
+}
+.team-member-card img {
+    max-width: 200px;
+    padding: var(--spacing-sm);
+}
+.employeename {
+    padding: var(--spacing-md);
+    background-color: var(--orange-spicy-light);
+    border: 1px solid var(--orange-spicy);
+    border-radius: var(--spacing-lg);
+}
+.employeename p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .meet-the-team {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
