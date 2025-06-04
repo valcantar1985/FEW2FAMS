@@ -61,6 +61,9 @@
   box-sizing: border-box;
 }
 
+html {
+}
+
 /* Global Styles */
 body {
   color: var(--black);
@@ -88,6 +91,8 @@ h4 {font-size: var(--font-size-h4)}
   font-size: var(--display);
   font-weight: var(--font-weight-light);
   text-align: center;
+
+
 }
 
 a {
@@ -261,6 +266,8 @@ padding: 20px;
 
 
 
+
+
 }
 
 .footer-copyright p {
@@ -328,6 +335,7 @@ padding: 20px;
     display: block;
     z-index: 9999;
   }
+
   /* Hide the checkbox */
   .navToggler {
     display: none;
@@ -348,7 +356,7 @@ padding: 20px;
   .navToggler:checked + .navTogglerMenu .menuClose {
     display: inline-block;
   }
-  
+
   /* .carousel {
   position: relative;;
   } */
@@ -363,8 +371,32 @@ padding: 20px;
     width: 100%;
     margin: var(--spacing-sm) 0;
   }
+
   .footer-block h4 {
     text-align: center;
+  }
+
+
+}
+  /* Hide the checkbox */
+.navToggler {
+  display: none;
+}
+
+/* Default: show hamburger, hide close icon */
+.navTogglerMenu .menuOpen {
+  display: inline-block;
+}
+.navTogglerMenu .menuClose {
+  display: none;
+}
+
+/* When checkbox is checked: hide hamburger, show close */
+.navToggler:checked + .navTogglerMenu .menuOpen {
+  display: none;
+}
+.navToggler:checked + .navTogglerMenu .menuClose {
+  display: inline-block;
 }
 
 
@@ -662,6 +694,4 @@ a.toTop:hover {
 
 .zoom-hover:hover {
   transform: scale(1.03);
-}
-
 }
