@@ -42,6 +42,10 @@
     flex-wrap: wrap;
     max-width: 1200px;
   }
+  .team-member-card:hover {
+    transform: scale(1.1);
+    border-width: 3px;
+  }
 .team-member-card {
     width: auto;
     text-align: center;
@@ -62,9 +66,22 @@
     font-style: italic;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .ourstory-hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourstory-text {
+        text-align: center;
+    }
+    .ourstory img {
+        max-width: 100%;
+    }
+    .ourstory-hero h2 {
+        text-align: center;
+    }
     .meet-the-team {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
     }
   }

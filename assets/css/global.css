@@ -61,9 +61,6 @@
   box-sizing: border-box;
 }
 
-html {
-}
-
 /* Global Styles */
 body {
   color: var(--black);
@@ -90,6 +87,7 @@ h4 {font-size: var(--font-size-h4)}
 .display {
   font-size: var(--display);
   font-weight: var(--font-weight-light);
+  text-align: center;
 }
 
 a {
@@ -259,6 +257,7 @@ padding: 20px;
   padding: var(--spacing-md);
   font-family: var(--font-family-heading);
   background-color: var(--white-cream);
+  text-align: center;
 
 
 
@@ -285,7 +284,7 @@ padding: 20px;
   header nav {
       position: absolute;
       width: 100%;
-      top: 90px;
+      top: 100px;
       left: 0;
       display: none;
   }
@@ -329,7 +328,27 @@ padding: 20px;
     display: block;
     z-index: 9999;
   }
-
+  /* Hide the checkbox */
+  .navToggler {
+    display: none;
+  }
+  
+  /* Default: show hamburger, hide close icon */
+  .navTogglerMenu .menuOpen {
+    display: inline-block;
+  }
+  .navTogglerMenu .menuClose {
+    display: none;
+  }
+  
+  /* When checkbox is checked: hide hamburger, show close */
+  .navToggler:checked + .navTogglerMenu .menuOpen {
+    display: none;
+  }
+  .navToggler:checked + .navTogglerMenu .menuClose {
+    display: inline-block;
+  }
+  
   /* .carousel {
   position: relative;;
   } */
@@ -344,29 +363,8 @@ padding: 20px;
     width: 100%;
     margin: var(--spacing-sm) 0;
   }
-
-
-
-}
-  /* Hide the checkbox */
-.navToggler {
-  display: none;
-}
-
-/* Default: show hamburger, hide close icon */
-.navTogglerMenu .menuOpen {
-  display: inline-block;
-}
-.navTogglerMenu .menuClose {
-  display: none;
-}
-
-/* When checkbox is checked: hide hamburger, show close */
-.navToggler:checked + .navTogglerMenu .menuOpen {
-  display: none;
-}
-.navToggler:checked + .navTogglerMenu .menuClose {
-  display: inline-block;
+  .footer-block h4 {
+    text-align: center;
 }
 
 
@@ -666,3 +664,4 @@ a.toTop:hover {
   transform: scale(1.03);
 }
 
+}

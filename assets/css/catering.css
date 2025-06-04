@@ -39,7 +39,7 @@
   
   .servicename {
     height: 275px;
-    padding: 100px 20px 40px; /* Top padding allows space for image overlap */
+    padding: 100px 20px 40px; 
     background-color: #fff;
     border: 1px solid var(--orange-spicy);
     border-radius: var(--spacing-lg);
