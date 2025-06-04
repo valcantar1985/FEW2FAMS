@@ -16,9 +16,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -1;
 
 }
-
+ 
 .form-area::before {
     content: "";
     position: absolute;
@@ -28,14 +29,15 @@
     height: 100%;
     background: linear-gradient(var(--green-lime), var(--green-lime));
     opacity: 0.93;
-    z-index: 0;
+    z-index: -2;
 }
 
 .form-container {
     opacity: 1;
     position: relative;
     z-index: 1;
-}
+} 
+
 .form-group {
     display: flex;
     flex-direction: column;
