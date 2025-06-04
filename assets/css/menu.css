@@ -178,7 +178,7 @@ h3 {
   background-color: #fff;
   margin: 10% auto;
   padding: 2rem;
-  width: 600px;
+  width: 375px;
   position: relative;
   border-radius: 8px;
   text-align: center;
@@ -192,7 +192,7 @@ h3 {
 }
 
 #modalIng {
-  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
 
 }
 
