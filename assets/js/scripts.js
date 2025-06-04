@@ -99,4 +99,32 @@ $(document).ready(function () {
         });
     });
 
+    $('.card').on('click', function() {
+        const imgSrc = $(this).find('img').attr('src');
+        const title = $(this).find('.card-title').text();
+        const desc = $(this).find('.card-desc').text();
+        const ing = $(this).find('.card-ingredients').text();
+
+    
+        $('#modalImg').attr('src', imgSrc);
+        $('#modalTitle').text(title);
+        $('#modalDesc').text(desc);
+        $('#modalIng').text(ing);
+
+    
+        $('#menuModal').fadeIn();
+      });
+    
+      $('.close-btn').on('click', function() {
+        $('#menuModal').fadeOut();
+      });
+    
+      // Optional: close modal if user clicks outside content
+      $('#menuModal').on('click', function(e) {
+        if ($(e.target).is('#menuModal')) {
+          $(this).fadeOut();
+        }
+      });
+
+
 });
