@@ -16,7 +16,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 
 }
  
@@ -29,7 +29,7 @@
     height: 100%;
     background: linear-gradient(var(--green-lime), var(--green-lime));
     opacity: 0.93;
-    z-index: -2;
+    z-index: -1;
 }
 
 .form-container {
@@ -75,6 +75,7 @@ input[type='email'], input[type='text'], input[type='tel'], select, textarea {
     padding: 7px;
     border: 1px solid black;
     font-family: var(--font-family-heading);
+
 
 }
 
