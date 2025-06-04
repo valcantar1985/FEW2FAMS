@@ -68,39 +68,47 @@
                         <em class="span-full">Note: Fields highlighted in red are required.</em> 
                         <br>
                         <br>
+                        <fieldset class="contact-info">
+                            <legend><h4>Contact Information</h4></legend>
+                            <br>
+
+                            <div class="form-group">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" name="first-name" required size="30" autofocus placeholder="First Name" id="first-name">
+                                
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" name="last-name" required size="30" placeholder="Last Name" id="last-name">
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="tel">Phone Number:</label>
+                                <input type="tel" name="tel" required ="10" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="(555) 555-5555" id="tel">
+                            </div>
+    
+                            <div class="form-group span-full">
+                                <label for="email">Email Address:</label>
+                                <input type="email" name="email" required ="30" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="example@domain.com" id="email">
+                            </div>
+
+                        </fieldset>
             
-                        <div class="form-group">
-                            <label for="first-name">First Name:</label>
-                            <input type="text" name="first-name" required size="30" autofocus placeholder="First Name" id="first-name">
-                            
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="last-name">Last Name:</label>
-                            <input type="text" name="last-name" required size="30" placeholder="Last Name" id="last-name">
-                        </div>
 
-                        <div class="form-group">
-                            <label for="tel">Phone Number:</label>
-                            <input type="tel" name="tel" required ="10" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="(555) 555-5555" id="tel">
-                        </div>
+                   
+                            <div class="form-group span-full">
+                                <label for="topic">How did you hear about us?</label>
+                                <select  size="5" multiple>
+                                    <option value='blue'>Friends/Family</option>
+                                    <option value='green'>Yelp</option>
+                                    <option value='red'>Instagram</option>
+                                    <option value='yellow'>Facebook</option>
+                                    <option value='orange'>Google Maps</option>
+                                </select>
+                            </div>
+    
 
-                        <div class="form-group span-full">
-                            <label for="email">Email Address:</label>
-                            <input type="email" name="email" required ="30" pattern='[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$' placeholder="example@domain.com" id="email">
-                        </div>
-
-
-                        <div class="form-group span-full">
-                            <label for="topic">How did you hear about us?</label>
-                            <select  size="5" multiple>
-                                <option value='blue'>Friends/Family</option>
-                                <option value='green'>Yelp</option>
-                                <option value='red'>Instagram</option>
-                                <option value='yellow'>Facebook</option>
-                                <option value='orange'>Google Maps</option>
-                            </select>
-                        </div>
 
             
             
@@ -170,7 +178,7 @@
                    <h4>Contact</h4>
                    <p>
                        (619) 941-1656 <br>
-                       <a class='email-link' href="contactus@aromathai.com">contactus@aromathai.com</a>
+                       <a class='email-link' href="mailto:contactus@aromathai.com">contactus@aromathai.com</a>
                    </p>
                </div> 
                <div class="footer-block">
